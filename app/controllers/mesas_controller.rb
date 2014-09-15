@@ -45,7 +45,7 @@ class MesasController < ApplicationController
   def update
     respond_to do |format|
       if @mesa.update(mesa_params)
-        format.html { redirect_to mesas_path, notice: 'Mesa was successfully updated.' }
+        format.html { redirect_to mesas_path, notice: 'Check-in Realizado com Sucesso' }
         format.json { render :show, status: :ok, location: @mesa }
       else
         format.html { render :edit }
